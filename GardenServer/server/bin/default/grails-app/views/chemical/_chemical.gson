@@ -1,0 +1,24 @@
+import com.manager.Chemical
+import static java.util.Calendar.*
+
+model {
+	Chemical chemical
+	UnitOfMeasure unitOfMeasure
+	Storage storage
+}
+
+json g.render(chemical, [resolveTemplate: false
+//,excludes:['unitOfMeasure', 'storage']
+
+]) {
+	"unitOfMeasure.baseUnit" chemical.unitOfMeasure.baseUnit
+	//"unitOfMeasure.id" chemical.unitOfMeasure.id
+	//"storage.id" chemical.storage.id
+	"storage.description" chemical.storage.description
+	//unitOfMeasure chemical.unitOfMeasure
+	//storage chemical.storage
+}
+
+//json g.render(chemical, [deep:true]) {
+//	"unitOfMeasure.baseUnit" unitOfMeasure.baseUnit
+//}

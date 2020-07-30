@@ -1,0 +1,7 @@
+import com.manager.GrowingSeason
+
+model {
+	GrowingSeason growingSeason
+}
+
+json tmpl.growingSeason(growingSeason)

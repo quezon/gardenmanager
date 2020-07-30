@@ -1,0 +1,8 @@
+import com.manager.ChemicalUsed
+
+model {
+	Iterable<ChemicalUsed> chemicalUsedList
+}
+
+json tmpl.chemicalUsed(chemicalUsedList ?: [])
+

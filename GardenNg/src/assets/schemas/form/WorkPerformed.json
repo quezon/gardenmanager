@@ -1,0 +1,149 @@
+[
+    {
+        "key": "workType",
+        "type": "select",
+        "templateOptions": {
+            "label": "Work Type",
+            "placeholder": "Work Type",
+            "required": true,
+            "options": [
+                {"value":"digging", "label": "Digging"},
+                {"value":"disposal", "label": "Disposal"},
+                {"value":"fertilizing", "label": "Fertilizing"},
+                {"value":"harvesting", "label": "Harvesting"},
+                {"value":"planting", "label": "Planting"},
+                {"value":"rooting", "label": "Rooting"},
+                {"value":"sowing", "label": "Sowing"},
+                {"value":"tilling", "label": "Tilling"},
+                {"value":"watering", "label": "Watering"},
+                {"value":"weeding", "label": "Weeding"}
+            ]
+        }
+    },
+    {
+        "key": "startDateTime",
+        "type": "datepicker",
+        "templateOptions": {
+          "label": "Start Date Time",
+          "placeholder": "Start Date Time",
+          "required": true
+        }
+    },
+    {
+        "key": "endDateTime",
+        "type": "datepicker",
+        "templateOptions": {
+          "label": "End Date Time",
+          "placeholder": "End Date Time",
+          "required": true
+        }
+    },
+    {
+        "key": "performedBy",
+        "type": "input",
+        "templateOptions": {
+          "label": "Performed By",
+          "placeholder": "Performed By",
+          "required": true
+        }
+    },
+    {
+        "key": "checkedBy",
+        "type": "input",
+        "templateOptions": {
+          "label": "Checked By",
+          "placeholder": "Checked By",
+          "required": true
+        }
+    },
+    {
+        "key": "chemicalsUsed",
+        "type": "repeat",
+        "templateOptions": {
+            "addText": "Add Chemical to Use"
+        },
+        "fieldArray": {
+            "fieldGroup": [
+                {
+                    "key": "chem",
+                    "type": "select",
+                    "templateOptions": {
+                      "label": "Chemical",
+                      "placeholder": "Chemical",
+                      "required": true,
+                      "options": "this.data.getSelectList('Chemical')"
+                    }
+                },
+                {
+                    "key": "qtyUsed",
+                    "type": "input",
+                    "templateOptions": {
+                      "label": "Qty Used",
+                      "placeholder": "Qty Used",
+                      "required": true
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "key": "gardenToolsUsed",
+        "type": "repeat",
+        "templateOptions": {
+            "addText": "Add Garden Tool to Use"
+        },
+        "fieldArray": {
+            "fieldGroup": [
+                {
+                    "key": "id",
+                    "type": "select",
+                    "templateOptions": {
+                      "label": "Garden Tool",
+                      "placeholder": "Garden Tool",
+                      "required": true,
+                      "options": "this.data.getSelectList('GardenTool')"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "key": "plantingMaterialsUsed",
+        "type": "repeat",
+        "templateOptions": {
+            "addText": "Add Planting Material to Use"
+        },
+        "fieldArray": {
+            "fieldGroup": [
+                {
+                    "key": "pm",
+                    "type": "select",
+                    "templateOptions": {
+                      "label": "Planting Material",
+                      "placeholder": "Planting Material",
+                      "required": true,
+                      "options": "this.data.getSelectList('PlantingMaterial')"
+                    }
+                },
+                {
+                    "key": "qtyUsed",
+                    "type": "input",
+                    "templateOptions": {
+                      "label": "Qty Used",
+                      "placeholder": "Qty Used",
+                      "required": true
+                    }
+                },
+                {
+                    "key": "qtyTransformed",
+                    "type": "input",
+                    "templateOptions": {
+                      "label": "Qty Transformed",
+                      "placeholder": "Qty Transformed",
+                      "required": true
+                    }
+                }
+            ]
+        }
+    }
+]

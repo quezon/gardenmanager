@@ -1,0 +1,8 @@
+import com.manager.UnitOfMeasure
+
+model {
+	Iterable<UnitOfMeasure> unitOfMeasureList
+}
+
+json tmpl.unitOfMeasure(unitOfMeasureList ?: [])
+

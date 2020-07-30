@@ -1,0 +1,10 @@
+import com.manager.GardenTool
+
+model {
+    GardenTool gardenTool
+}
+
+json {
+    "id" gardenTool.id
+    "toolName" gardenTool.toolName
+}

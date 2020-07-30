@@ -1,0 +1,36 @@
+[
+    {
+      "key": "toolName",
+      "type": "input",
+      "templateOptions": {
+        "label": "Tool Name",
+        "placeholder": "Tool Name",
+        "required": true
+      }
+    },
+    {
+      "key": "dateAcquired",
+      "type": "datepicker",
+      "templateOptions": {
+        "label": "Date Acquired",
+        "placeholder": "Date Acquired",
+        "required": true
+      }
+    },
+    {
+        "key": "cost",
+        "type": "input",
+        "templateOptions": {
+          "label": "Cost",
+          "placeholder": "Cost",
+          "required": true
+        }
+    },
+    {
+      "key": "photo64",
+      "type": "file",
+      "templateOptions": {
+        "label": "Photo"
+      }
+    }
+  ]

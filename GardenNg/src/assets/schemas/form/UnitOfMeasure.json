@@ -1,0 +1,37 @@
+[
+    {
+        "key": "baseUnit",
+        "type": "input",
+        "templateOptions": {
+            "label": "Base Unit",
+            "placeholder": "Base Unit",
+            "required": true
+        }
+    },
+    {
+        "key": "measureType",
+        "type": "select",
+        "templateOptions": {
+            "label": "Measure Type",
+            "placeholder": "Measure Type",
+            "required": true,
+            "options": [
+                { "value": "time", "label": "Time"  },
+                { "value": "length", "label": "Length"  },
+                { "value": "mass", "label": "Mass"  },
+                { "value": "temperature", "label": "Temperature"  },
+                { "value": "electric current", "label": "Electric current"  },
+                { "value": "amount of substance", "label": "Amount of substance"  }
+            ]
+        }
+    },
+    {
+        "key": "symbol",
+        "type": "input",
+        "templateOptions": {
+            "label": "Symbol",
+            "placeholder": "Symbol",
+            "required": true
+        }
+    }
+]

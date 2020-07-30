@@ -1,0 +1,25 @@
+[
+  {
+    "scientificName":"Nicotiana tabacum",
+    "commonName":"Tobacco",
+    "cultivar":"Little Dutch"
+  },
+  {
+    "scientificName":"Rosa abietina",
+    "commonName":"Rose"
+  },
+  {
+    "scientificName":"Prunus persica",
+    "commonName":"Peach",
+    "cultivar":"Elberta"
+  },
+  {
+    "scientificName":"Punica granatum",
+    "commonName":"Dwarf Pomegranate",
+    "cultivar":"Nana"
+  },
+  {
+    "scientificName":"Agave americana",
+    "commonName":"Agave"
+  }
+]

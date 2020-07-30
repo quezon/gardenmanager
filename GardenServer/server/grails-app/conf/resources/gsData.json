@@ -1,0 +1,30 @@
+[
+  {
+    "USDAZone": "9b",
+    "months": ["June","July","August"],
+    "plant": {
+      "id": 1
+    }
+  },
+  {
+    "USDAZone": "9b",
+    "months": ["September","October","November"],
+    "plant": {
+      "id": 2
+    }
+  },
+  {
+    "USDAZone": "9b",
+    "months": ["January","February"],
+    "plant": {
+      "id": 3
+    }
+  },
+  {
+    "USDAZone": "9b",
+    "months": ["November","December","January","February"],
+    "plant": {
+      "id": 4
+    }
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "plant": {
+      "id": 1
+    },
+    "materialType":"seeds",
+    "vendor":"SeedsnSuch",
+    "dateAcquired":"2019-08-01",
+    "currency":"USD",
+    "cost":"2.00",
+    "qtyAcquired":1,
+    "qtyUsed":0.25,
+    "unitOfMeasure": {
+      "id": 2
+    },
+    "storage": {
+      "id": 2
+    }
+  },
+  {
+    "plant": {
+      "id": 2
+    },
+    "materialType":"cuttings",
+    "vendor":"Lowes",
+    "dateAcquired":"2019-08-01",
+    "currency":"USD",
+    "cost":"200.00",
+    "qtyAcquired":1000,
+    "qtyUsed":500,
+    "unitOfMeasure": {
+      "id": 3
+    },
+    "storage": {
+      "id": 2
+    }
+  },
+  {
+    "plant": {
+      "id": 4
+    },
+    "materialType":"seedlings",
+    "vendor":"SeedsnSuch",
+    "dateAcquired":"2019-08-01",
+    "currency":"USD",
+    "cost":"2.00",
+    "qtyAcquired":1,
+    "qtyUsed":0,
+    "unitOfMeasure": {
+      "id": 3
+    },
+    "storage": {
+      "id": 2
+    }
+  },
+  {
+    "plant": {
+      "id": 3
+    },
+    "materialType":"seedlings",
+    "vendor":"Orlando Nursery",
+    "dateAcquired":"2019-08-01",
+    "currency":"USD",
+    "cost":"1600.00",
+    "qtyAcquired":40,
+    "qtyUsed":0,
+    "unitOfMeasure": {
+      "id": 3
+    },
+    "storage": {
+      "id": 2
+    }
+  }
+]

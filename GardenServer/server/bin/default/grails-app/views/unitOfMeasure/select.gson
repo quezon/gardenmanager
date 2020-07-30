@@ -1,0 +1,10 @@
+import com.manager.UnitOfMeasure
+
+model {
+	Iterable<UnitOfMeasure> unitOfMeasureList
+}
+
+json(unitOfMeasureList.toList()) { UnitOfMeasure unitOfMeasure ->
+    value unitOfMeasure.id
+    label unitOfMeasure.baseUnit
+}

@@ -1,0 +1,6 @@
+<p>{{ to.label }}</p>
+<p-calendar 
+[(ngModel)]="form[key]" 
+    dateFormat="yy.mm.dd" [placeholder]="to.placeholder">
+    <ng-container #fieldComponent></ng-container>
+</p-calendar>

@@ -1,0 +1,12 @@
+import com.manager.PlantingMaterial
+
+model {
+	PlantingMaterial plantingMaterial
+}
+
+json g.render(plantingMaterial, [resolveTemplate: false, excludes:['unitOfMeasure','plant']]) {
+	"plant.plantId" plantingMaterial.plant.plantId
+	"plant.completeName" plantingMaterial.plant.scientificName.concat(", ").concat(plantingMaterial.plant.cultivar)
+	"unitOfMeasure.baseUnit" plantingMaterial.unitOfMeasure.baseUnit
+	"unitOfMeasure.id" plantingMaterial.unitOfMeasure.id
+}

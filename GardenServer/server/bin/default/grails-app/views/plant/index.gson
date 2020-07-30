@@ -1,0 +1,8 @@
+import com.manager.Plant
+
+model {
+	Iterable<Plant> plantList
+}
+
+json tmpl.plant(plantList ?: [])
+

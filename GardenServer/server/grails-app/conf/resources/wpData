@@ -1,0 +1,14 @@
+[
+    {
+    "performedBy": "Gabriel Ferrer",
+    "checkedBy": "Jane Ferrer",
+    "workType": "harvesting",
+    "startDateTime": "2020-02-07T04:46:41-0500"
+    "endDateTime": "2020-02-07T06:46:41-0500"
+    "plantingMaterialsUsed": [
+        { "id": 1 }, { "id": 2}
+    ]
+    "chemicalsUsed": []
+    "gardenToolsUsed: []
+    }
+]

@@ -1,0 +1,14 @@
+import com.manager.PlantingMaterialUsed
+
+model {
+    PlantingMaterialUsed plantingMaterialUsed
+}
+
+json {
+    "pm" {
+        id plantingMaterialUsed.pm.id
+    }
+    "scientificName" plantingMaterialUsed.pm.plant.scientificName
+    "qtyUsed" plantingMaterialUsed.qtyUsed
+    "qtyTransformed" plantingMaterialUsed.qtyTransformed
+}

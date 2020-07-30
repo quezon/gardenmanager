@@ -1,0 +1,37 @@
+[
+    {
+      "key": "scientificName",
+      "type": "input",
+      "templateOptions": {
+        "label": "Scientific Name",
+        "placeholder": "Scientific Name",
+        "required": true
+      }
+    },
+    {
+      "key": "commonName",
+      "type": "input",
+      "templateOptions": {
+        "label": "Common Name",
+        "placeholder": "Common Name",
+        "required": true
+      }
+    },
+    {
+      "key": "cultivar",
+      "type": "input",
+      "templateOptions": {
+        "label": "Cultivar",
+        "placeholder": "Cultivar",
+        "required": true
+      }
+    },
+    {
+        "key": "photo64",
+        "type": "file",
+        "templateOptions": {
+          "label": "Photo",
+          "required": true
+        }
+    }
+  ]

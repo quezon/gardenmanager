@@ -1,0 +1,7 @@
+import com.manager.Storage
+
+model {
+	Storage storage
+}
+
+json g.render(storage, [resolveTemplate: false])

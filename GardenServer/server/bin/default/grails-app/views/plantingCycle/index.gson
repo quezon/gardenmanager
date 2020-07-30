@@ -1,0 +1,8 @@
+import com.manager.PlantingCycle
+
+model {
+	Iterable<PlantingCycle> plantingCycleList
+}
+
+json tmpl.plantingCycle(plantingCycleList ?: [])
+

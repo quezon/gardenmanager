@@ -1,0 +1,7 @@
+import com.manager.GardenTool
+
+model {
+	GardenTool gardenTool
+}
+
+json g.render(gardenTool, [resolveTemplate: false])

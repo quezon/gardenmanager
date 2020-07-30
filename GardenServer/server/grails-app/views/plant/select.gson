@@ -1,0 +1,10 @@
+import com.manager.Plant
+
+model {
+	Iterable<Plant> plantList
+}
+
+json(plantList.toList()) { Plant plant ->
+    value plant.id
+    label plant.scientificName + ", " + plant.cultivar
+}

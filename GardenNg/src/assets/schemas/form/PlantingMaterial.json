@@ -1,0 +1,89 @@
+[
+    {
+        "key": "plant",
+        "type": "select",
+        "templateOptions": {
+          "label": "Plant",
+          "options": "this.data.getSelectList('Plant')",
+          "required": true
+        }
+    },
+    {
+        "key": "materialType",
+        "type": "select",
+        "templateOptions": {
+          "label": "Plant",
+          "options": [
+              {"value":"cuttings", "label":"Cuttings"},
+              {"value":"seeds", "label":"Seeds"},
+              {"value":"seedlings", "label":"Seedlings"}
+            ],
+          "required": true
+        }
+    },
+    {
+        "key": "vendor",
+        "type": "input",
+        "templateOptions": {
+          "label": "Vendor",
+          "placeholder": "Vendor",
+          "required": true
+        }
+    },
+    {
+        "key": "dateAcquired",
+        "wrappers": ["datepick"],
+        "templateOptions": {
+          "label": "Date Acquired",
+          "placeholder": "Date Acquired",
+          "required": true
+        }
+    },
+    {
+        "key": "cost",
+        "type": "input",
+        "templateOptions": {
+          "label": "Cost",
+          "placeholder": "Cost",
+          "required": true
+        }
+    },
+    {
+        "key": "qtyAcquired",
+        "type": "input",
+        "templateOptions": {
+          "label": "Qty Acquired",
+          "placeholder": "Qty Acquired",
+          "required": true
+        }
+    },
+    {
+        "key": "qtyUsed",
+        "type": "input",
+        "templateOptions": {
+          "label": "Qty Used",
+          "placeholder": "Qty Used",
+          "required": true
+        }
+    },
+    {
+        "key": "unitOfMeasure",
+        "type": "select",
+        "templateOptions": {
+          "label": "U/M",
+          "placeholder": "Unit of Measure",
+          "required": true,
+          "options": "this.data.getSelectList('UnitOfMeasure')"
+        }
+      },
+      {
+        "key": "storage",
+        "type": "select",
+        "templateOptions": {
+          "label": "Stored in",
+          "placeholder": "Stored in",
+          "required": true,
+          "options": "this.data.getSelectList('Storage')"
+        }
+      }
+]

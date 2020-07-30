@@ -1,0 +1,29 @@
+[
+    {
+      "key": "plant",
+      "type": "select",
+      "templateOptions": {
+        "label": "Plant",
+        "options": "this.data.getSelectList('Plant')",
+        "required": true
+      }
+    },
+    {
+        "key": "dateStarted",
+        "wrappers": ["datepick"],
+        "templateOptions": {
+          "label": "Date Started",
+          "placeholder": "Date Started",
+          "required": true
+        }
+    },
+    {
+        "key": "dateEnded",
+        "wrappers": ["datepick"],
+        "templateOptions": {
+          "label": "Date Ended",
+          "placeholder": "Date Ended",
+          "required": true
+        }
+    }
+]

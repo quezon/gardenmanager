@@ -1,0 +1,8 @@
+import com.manager.GrowingSeason
+
+model {
+	Iterable<GrowingSeason> growingSeasonList
+}
+
+json tmpl.growingSeason(growingSeasonList ?: [])
+

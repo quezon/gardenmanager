@@ -1,0 +1,7 @@
+import com.manager.WorkPerformed
+
+model {
+	WorkPerformed workPerformed
+}
+
+json tmpl.workPerformed(workPerformed)

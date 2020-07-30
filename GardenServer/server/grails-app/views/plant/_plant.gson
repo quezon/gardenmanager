@@ -1,0 +1,8 @@
+import com.manager.Plant
+
+model {
+	Plant plant
+}
+
+//json g.render(plant, [resolveTemplate: false])
+json g.render(plant, [deep:true])

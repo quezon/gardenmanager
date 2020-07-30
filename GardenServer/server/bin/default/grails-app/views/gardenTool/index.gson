@@ -1,0 +1,8 @@
+import com.manager.GardenTool
+
+model {
+	Iterable<GardenTool> gardenToolList
+}
+
+json tmpl.gardenTool(gardenToolList ?: [])
+

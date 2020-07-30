@@ -1,0 +1,20 @@
+<p-splitButton label="New" icon="pi pi-file" (onClick)="create()" [model]="splitButtonItems"></p-splitButton>
+<app-prime-ng-table
+*ngIf="!nestedTable" 
+[domain]="domain"
+[cols]="columnNames" 
+[objects]="tableData"></app-prime-ng-table>
+
+<app-prime-ng-tree-table
+*ngIf="nestedTable" 
+[domain]="domain"
+[cols]="columnNames"
+[subCols]="subColumnNames" 
+[subTable]="subTable"
+[objects]="tableData"></app-prime-ng-tree-table>
+
+<app-form 
+[action]="action"
+[domain]="domain"
+[display]="displayFormDialog" 
+(displayChange)="onDisplayChange($event)"></app-form>

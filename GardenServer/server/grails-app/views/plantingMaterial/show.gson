@@ -1,0 +1,7 @@
+import com.manager.PlantingMaterial
+
+model {
+	PlantingMaterial plantingMaterial
+}
+
+json tmpl.plantingMaterial(plantingMaterial)

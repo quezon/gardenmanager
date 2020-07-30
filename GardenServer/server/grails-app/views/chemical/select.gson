@@ -1,0 +1,13 @@
+import com.manager.Chemical
+
+model {
+	Iterable<Chemical> chemicalList
+}
+
+json(chemicalList.toList()) { Chemical chemical ->
+    //value chemical.id
+    value {
+        id chemical.id
+    }
+    label chemical.tradeName
+}

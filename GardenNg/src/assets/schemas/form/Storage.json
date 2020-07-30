@@ -1,0 +1,19 @@
+[
+    {
+        "key": "description",
+        "type": "textarea",
+        "templateOptions": {
+            "label": "Description",
+            "placeholder": "Description",
+            "required": true
+        }
+    },
+    {
+        "key": "photo64",
+        "type": "file",
+        "templateOptions": {
+            "label": "Photo",
+            "required": true
+        }
+    }
+]

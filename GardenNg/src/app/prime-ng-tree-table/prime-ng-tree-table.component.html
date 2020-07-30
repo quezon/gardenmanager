@@ -1,0 +1,53 @@
+<p-table [columns]="cols" [value]="objects" dataKey="id">
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+            <th style="width: 3em"></th>
+            <th *ngFor="let col of columns">
+                {{col.header}}
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-expanded="expanded" let-columns="columns">
+        <tr>
+            <td>
+                <a href="#" [pRowToggler]="rowData">
+                    <i [ngClass]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"></i>
+                </a>
+            </td>
+            <td *ngFor="let col of columns">
+                {{col.header != 'Action' ? rowData[col.field] : ''}}
+                <button (click)="showEditForm(object)"
+                    *ngIf="col.header == 'Action'"
+                    matTooltip="Edit Record">
+                    <mat-icon>edit</mat-icon>
+                </button>
+            </td>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="rowexpansion" let-rowData let-columns="columns">
+        <div class="ui-g ui-fluid" style="font-size:16px;padding:20px;width:800px">
+            <div class="ui-g-24 ui-md-16">
+                <p-accordion [style]="{'width':'100%'}">
+                    <p-accordionTab header="{{st}}" *ngFor="let st of subTable; let i=index">
+                        <p-table [columns]="subCols[subTableKey[i]]" [value]="rowData[subTableKey[i]]">
+                            <ng-template pTemplate="header" let-columns>
+                                <tr>
+                                    <th *ngFor="let col of columns">
+                                        {{col.header}}
+                                    </th>
+                                </tr>
+                            </ng-template>
+                            <ng-template pTemplate="body" let-rowDatum let-expanded="expanded" let-columns="columns">
+                                <tr>
+                                    <th *ngFor="let col of columns">
+                                        {{rowDatum[col.field]}}
+                                    </th>
+                                </tr>
+                            </ng-template>
+                        </p-table>
+                    </p-accordionTab>
+                </p-accordion>
+            </div>
+        </div>
+    </ng-template>
+</p-table>

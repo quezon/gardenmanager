@@ -1,0 +1,11 @@
+import com.manager.GrowingSeason
+
+model {
+	GrowingSeason growingSeason
+}
+
+json g.render(growingSeason, [resolveTemplate: false]) {
+    "plant.completeName" growingSeason.plant.scientificName.concat(", ").concat(growingSeason.plant.cultivar ?: "")
+}
+
+//json g.render(growingSeason, [deep: true])

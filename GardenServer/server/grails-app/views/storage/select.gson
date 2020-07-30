@@ -1,0 +1,10 @@
+import com.manager.Storage
+
+model {
+	Iterable<Storage> storageList
+}
+
+json(storageList.toList()) { Storage storage ->
+    value storage.id
+    label storage.description
+}

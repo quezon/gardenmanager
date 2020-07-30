@@ -1,0 +1,8 @@
+import com.manager.WorkPerformed
+
+model {
+	Iterable<WorkPerformed> workPerformedList
+}
+
+json tmpl.workPerformed(workPerformedList ?: [])
+

@@ -1,0 +1,13 @@
+import com.manager.ChemicalUsed
+
+model {
+	ChemicalUsed chemicalUsed
+}
+
+json g.render(chemicalUsed, [resolveTemplate: false, excludes:['chem']]) {
+	"chem.tradeName" chemicalUsed.chem.tradeName
+	"chem.chemId" chemicalUsed.chem.chemId
+	"chem.unitOfMeasure.id" chemicalUsed.chem.unitOfMeasure.id
+	"chem.unitOfMeasure.baseUnit" chemicalUsed.chem.unitOfMeasure.baseUnit
+	qtyUsed chemicalUsed.qtyUsed
+}

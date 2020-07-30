@@ -1,0 +1,10 @@
+import com.manager.GardenTool
+
+model {
+	Iterable<GardenTool> gardenToolList
+}
+
+json(gardenToolList.toList()) { GardenTool gardenTool ->
+    value gardenTool.id
+    label gardenTool.toolName
+}

@@ -1,0 +1,7 @@
+import com.manager.PlantingCycle
+
+model {
+	PlantingCycle plantingCycle
+}
+
+json g.render(plantingCycle, [resolveTemplate: false])

@@ -1,0 +1,41 @@
+<p-table [value]="objects">
+    <ng-template pTemplate="header">
+        <tr>
+            <th *ngFor="let col of cols">
+                {{col.header}}
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-object>
+        <tr>
+            <td *ngFor="let col of cols">
+                {{col.header != 'Action' ? object[col.field] : ''}}
+                <button (click)="showPhoto(object[col.field])" 
+                    *ngIf="col.field == 'photo64'"
+                    matTooltip="View Photo">
+                    <mat-icon>photo</mat-icon>
+                </button>
+                <button (click)="showEditForm(object)"
+                    *ngIf="col.header == 'Action'"
+                    matTooltip="Edit Record">
+                    <mat-icon>edit</mat-icon>
+                </button>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
+
+<p-dialog header="View Photo" [(visible)]="displayPhoto" [modal]="true"
+    [style]="{width: '50vw'}" [maximizable]="true" [baseZIndex]="10000"
+    [draggable]="false" [resizable]="true">
+    <p><img src="{{photoSrc}}" style="height:250px;max-width: 100%;" /></p>
+</p-dialog>
+
+<app-form 
+[action]="action"
+[domain]="domain"
+[formData]="toEdit"
+[display]="displayEditForm" 
+(displayChange)="onEditFormClose($event)">
+</app-form>
+

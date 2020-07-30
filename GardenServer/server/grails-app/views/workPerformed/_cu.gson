@@ -1,0 +1,13 @@
+import com.manager.ChemicalUsed
+
+model {
+    ChemicalUsed chemicalUsed
+}
+
+json {
+    chem {
+        id chemicalUsed.chem.id
+    }
+    tradeName chemicalUsed.chem.tradeName
+    qtyUsed chemicalUsed.qtyUsed
+}

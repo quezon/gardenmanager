@@ -1,0 +1,17 @@
+import com.manager.WorkPerformed
+
+model {
+	WorkPerformed workPerformed
+}
+
+json g.render(workPerformed, [
+    resolveTemplate: false,
+    excludes: ['plantingMaterialsUsed','chemicalsUsed','gardenToolsUsed']
+    //deep: true
+    ]) {
+        plantingMaterialsUsed tmpl.pmu(workPerformed.plantingMaterialsUsed)
+        chemicalsUsed tmpl.cu(workPerformed.chemicalsUsed)
+        gardenToolsUsed tmpl.gtu(workPerformed.gardenToolsUsed)
+}
+
+//json g.render(workPerformed, [deep: true])

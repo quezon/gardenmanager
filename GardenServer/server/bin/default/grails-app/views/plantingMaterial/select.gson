@@ -1,0 +1,10 @@
+import com.manager.PlantingMaterial
+
+model {
+	Iterable<PlantingMaterial> plantingMaterialList
+}
+
+json(plantingMaterialList.toList()) { PlantingMaterial pm ->
+    value pm.materialId
+    label "${pm.qtyAcquired - pm.qtyUsed}" + " " + pm.unitOfMeasure.baseUnit + " of " + pm.plant.scientificName + ", " + pm.plant.cultivar + " " + pm.materialType
+}

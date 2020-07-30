@@ -1,0 +1,7 @@
+import com.manager.Chemical
+
+model {
+	Chemical chemical
+}
+
+json tmpl.chemical(chemical)

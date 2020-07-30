@@ -1,0 +1,7 @@
+import com.manager.Plant
+
+model {
+	Plant plant
+}
+
+json tmpl.plant(plant)
